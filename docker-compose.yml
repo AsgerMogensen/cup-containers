@@ -1,0 +1,9 @@
+services:
+  cup-containers:
+    image: ghcr.io/asgermogensen/cup-container:latest
+    command:  serve
+    container_name: cup_containers
+    ports:
+      - "9004:8000"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
