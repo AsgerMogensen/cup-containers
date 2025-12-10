@@ -101,7 +101,7 @@ pub async fn get_images_from_docker_daemon(
 
 pub async fn get_in_use_images(ctx: &Context) -> FxHashMap<String, Vec<String>> {
     if ctx.config.socket.as_deref() == Some("none") {
-        return vec![];
+        return FxHashMap::default();
     }
 
     let client: Docker = create_docker_client(ctx.config.socket.as_deref());
