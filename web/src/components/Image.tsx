@@ -4,9 +4,6 @@ import {
   DialogBackdrop,
   DialogPanel,
   DialogTitle,
-  Disclosure,
-  DisclosureButton,
-  DisclosurePanel,
 } from "@headlessui/react";
 import { WithTooltip } from "./ui/Tooltip";
 import type { Image } from "../types";
@@ -14,7 +11,6 @@ import { theme } from "../theme";
 import { CodeBlock } from "./CodeBlock";
 import {
   Box,
-  ChevronDown,
   CircleArrowUp,
   CircleCheck,
   Container,
